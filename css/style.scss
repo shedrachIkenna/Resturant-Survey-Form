@@ -1,0 +1,179 @@
+$dark-blue : #1b1b32;
+$white: #f3f3f3;
+$blue-alpa: rgba(27, 27, 50, 0.8);
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width: 800px;
+    max-width: 100%;
+   
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    color: $white;
+    background: $dark-blue;
+    background-blend-mode: soft-light;
+    // background-image: url(../images/bg.jpeg);
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.5), rgba(136, 136, 206, 0.7)), url(../images/bg.jpeg);
+    background-size: cover;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    header{
+        text-align: center;
+        padding-bottom: 15px;
+
+        h1{
+            font-size: 2.7rem;
+        }
+
+        @media screen and(max-width: 480px) {
+            h1{
+                font-size: 1.9rem;
+            }
+        }
+
+        p{
+            font-size: 0.8rem;
+        }
+    }
+
+   #survey-form{
+       background: $blue-alpa;
+       padding: 50px 35px;
+       border-radius: 30px;
+
+    label{
+        display: block;
+        // align-items: center;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        
+    }
+
+    #number-label{
+        display: inline;
+    }
+
+    @media screen and(max-width:670px) {
+        label{
+            font-size: 1rem !important;
+        }
+    }
+
+   .form-control:focus{
+        outline:none;
+    }
+
+    div > p{
+        margin-top: 15px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and(max-width:670px) {
+        div > p{
+            font-size: 15px !important;
+        }
+    }
+
+    .form-control{
+        width: 95%;
+        padding: 7px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+     .dropdown{
+        width: 100%;
+    }
+
+    #name, #email{
+        background: none;
+        border-bottom: 1px solid $white;
+        border-radius:0px;
+        color: $white;
+        transition: all .5s;
+    }
+
+    #name:focus, #email:focus{
+        width: 80%;
+    }
+
+    #number{
+        width: 10%;
+        min-width: 60px;
+    }
+
+    @media screen and(max-width:670px) {
+        .form-control{
+            padding: 5px;
+            font-size: 14px;
+        }
+    }
+
+
+    select{
+        margin-top: 7px;
+    }
+
+    button{
+        padding: 12px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12.5px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        color: $dark-blue;
+    }
+
+    button:hover{
+        color: $white;
+        background-color: lighten($color: $blue-alpa, $amount: 30);
+        transition: all .4s;
+    }
+
+    button:focus{
+        outline: none;
+    }
+
+    textarea{
+        display: block;
+        width: 50%;
+        height: 80px;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    textarea:focus{
+        outline: none;
+    }
+   }
+
+}
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Sayrah's Kitchen</h1>
+            <p id="description">...We deliver Equisite Tastes from our Special Delicacies</p>
+            <br>
+            <p>Customer Survey Form</p>
+        </header>
+
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="Name" placeholder="Enter Your Name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <input type="number" id="number" name="age" placeholder="Age" class="form-control" min="10" max="99">
+                <label id="number-label" for="number">Age <span>(optional)</span></label>
+            </div>
+
+            <div class="form-group">
+                <p>Which option best describes you?</p>
+                <select name="about" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select description</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="non-vegetarian">Non-vegetarian</option>
+                    <option value="straight">Straight</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend our meals to a friend?</p>
+                <label>
+                    <input type="radio"
+                    value="definately"
+                    class="input-radio"
+                    name="recommendation"
+                    checked/>Definately
+                </label>
+
+                <label>
+                    <input type="radio"
+                    value="maybe"
+                    class="input-radio"
+                    name="recommendation"
+                    checked/>Maybe
+                </label>
+
+                <label>
+                    <input type="radio"
+                    value="not-sure"
+                    class="input-radio"
+                    name="recommendation"
+                    checked/>Not sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Whats your favorite meal in Sayrah's Kitchen?</p>
+                <select name="fav" id="fav" class="form-control" required>
+                    <option disabled selected value>Seclect an option</option>
+                    <option value="Local-meals">Local meals</option>
+                    <option value="foreign-meals">Foreign Meals</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which of these meals do you want added to our Menu?<span>(Check all that apply)</span></p>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="tacos"
+                    class="input-checkbox">
+                    Tacos(Mexico)
+                </label>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="chicken-rice"
+                    class="input-checkbox">
+                    Chicken rice(Singapore)
+                </label>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="french-toast"
+                    class="input-checkbox">
+                    French toast(Hong kong)
+                </label>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="butter"
+                    class="input-checkbox">
+                    Butter garlic crab(India)
+                </label>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="sushi"
+                    class="input-checkbox">
+                    Sushi(Japan)
+                </label>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="lasagna"
+                    class="input-checkbox">
+                    Lasagna(Italy)
+                </label>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="poke"
+                    class="input-checkbox">
+                    Poke(US)
+                </label>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="croissant"
+                    class="input-checkbox">
+                    Croissant(France)
+                </label>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="donuts"
+                    class="input-checkbox">
+                    Donuts(US)
+                </label>
+                <label>
+                    <input type="checkbox"
+                    name="add-meal"
+                    value="piri"
+                    class="input-checkbox">
+                    Piri-piri Chicken
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comments" placeholder="Enter your comments here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
